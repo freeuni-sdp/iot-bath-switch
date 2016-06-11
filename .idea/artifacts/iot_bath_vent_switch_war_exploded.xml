@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="iot-bath-vent-switch:war exploded">
-    <output-path>$PROJECT_DIR$/target/soil_moisture_sensor</output-path>
+    <output-path>$PROJECT_DIR$/target/bath_vent_switch</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
@@ -41,7 +41,7 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/target/soil_moisture_sensor/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/target/bath_vent_switch/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="iot-bath-vent-switch/web/Web" />
     </root>
