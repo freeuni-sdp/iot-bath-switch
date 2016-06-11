@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="iot-bath-vent-switch:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="soil_moisture_sensor.war">
+      <element id="artifact" artifact-name="iot-bath-vent-switch:war exploded" />
+    </root>
+  </artifact>
+</component>
