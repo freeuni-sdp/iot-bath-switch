@@ -11,7 +11,7 @@
 <build>
     <testSourceDirectory>src/test</testSourceDirectory>
 
-    <finalName>bath-vent-switch</finalName>
+    <finalName>bath-vent-swich</finalName>
     <plugins>
 
         <plugin>
