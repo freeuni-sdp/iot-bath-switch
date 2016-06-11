@@ -1,0 +1,27 @@
+FORMAT: 1A
+HOST: http://polls.apiblueprint.org/
+
+# bath-vent-switch
+
+Polls is a simple API allowing consumers to view polls and vote in them.
+
+# Ping [/ping]
+
+## Ping service [GET]
+
+Returns `200` if service is alive.
+
++ Response 200 (application/json)
+
+## bath-vent turn on/off [/houses/{house_id}/bath_vent/{bath_vent_id}]
+Turns on or turns off bath vent.
+
+### turn on bath vent [PUT]
+
++ response 200 (application/json) 
+
++ response 503 (application/json)
+        
+        {
+            "reason" : "Hardware problem!"
+        }
