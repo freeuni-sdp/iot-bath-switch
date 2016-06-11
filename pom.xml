@@ -11,7 +11,7 @@
 <build>
     <testSourceDirectory>src/test</testSourceDirectory>
 
-    <finalName>soil_moisture_sensor</finalName>
+    <finalName>bath-vent-switch</finalName>
     <plugins>
 
         <plugin>
