@@ -5,13 +5,13 @@
 <modelVersion>4.0.0</modelVersion>
 
 <groupId>ge.edu.freeuni.sdp.switches.bath_vent</groupId>
-<artifactId>bath-vent-switches</artifactId>
+<artifactId>bath_vent_switches</artifactId>
 <version>1.0-SNAPSHOT</version>
 
 <build>
     <testSourceDirectory>src/test</testSourceDirectory>
 
-    <finalName>bath-vent-switches</finalName>
+    <finalName>bath_vent_switches</finalName>
     <plugins>
 
         <plugin>
