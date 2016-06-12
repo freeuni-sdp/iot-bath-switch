@@ -1,4 +1,4 @@
-package ge.edu.freeuni.sdp.iot.swich.bath_vent;
+package ge.edu.freeuni.sdp.iot.switches.bath_vent;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

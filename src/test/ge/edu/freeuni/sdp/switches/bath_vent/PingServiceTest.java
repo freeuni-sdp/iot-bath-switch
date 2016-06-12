@@ -1,6 +1,6 @@
-package ge.edu.freeuni.sdp.swich.bath_vent;
+package ge.edu.freeuni.sdp.switches.bath_vent;
 
-import ge.edu.freeuni.sdp.iot.swich.bath_vent.PingService;
+import ge.edu.freeuni.sdp.iot.switches.bath_vent.PingService;
 import org.glassfish.jersey.server.ResourceConfig;
 import org.glassfish.jersey.test.JerseyTest;
 import org.junit.Test;
