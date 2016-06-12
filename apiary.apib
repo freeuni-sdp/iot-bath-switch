@@ -2,8 +2,9 @@ FORMAT: 1A
 HOST: iot-bath-vent-switch.herokuapp.com
 
 # bath-vent-switch
-
-Polls is a simple API allowing consumers to view polls and vote in them.
+bath-vent-switch is a simple api that allows user to turn on or off switch.
+it doesn't matter in which state switch is, after calling on, it will be on,
+adter calling off, it will be off.
 
 # Ping [/ping]
 
@@ -14,7 +15,8 @@ Returns `200` if service is alive.
 + Response 200 (application/json)
 
 ## bath-vent turn on/off [/houses/{house_id}/bath_vent/{bath_vent_id}]
-Turns on or turns off bath vent.
+house is identified by houseid and bath_vent_switch is identified by 
+switchid. Turns on or turns off bath vent.
 
 ### turn on bath vent [PUT]
 
