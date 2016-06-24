@@ -18,19 +18,14 @@ public class SwitchResponse {
     @XmlElement
     private boolean succeed;
 
-    public SwitchResponse(String houseid, Integer switchid, String status, boolean succeed) {
+    public SwitchResponse(String houseid,String status, boolean succeed) {
         this.houseid = houseid;
-        this.switchid = switchid;
         this.status = status;
         this.succeed = succeed;
     }
 
     public String getHouseid() {
         return houseid;
-    }
-
-    public Integer getSwitchid() {
-        return switchid;
     }
 
     public String getStatus() {

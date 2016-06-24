@@ -12,13 +12,10 @@ public class VentSwitch {
     @XmlElement
     private String houseid;
     @XmlElement
-    private Integer ventSwitchid;
-    @XmlElement
     private String status;
 
-    public VentSwitch(String houseid, Integer ventSwitchid, String status) {
+    public VentSwitch(String houseid, String status) {
         this.houseid = houseid;
-        this.ventSwitchid = ventSwitchid;
         this.status = status;
     }
 
@@ -26,9 +23,6 @@ public class VentSwitch {
         return houseid;
     }
 
-    public Integer getVentSwitchid() {
-        return ventSwitchid;
-    }
 
     public String getStatus() {
         return status;

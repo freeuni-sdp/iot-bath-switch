@@ -11,17 +11,17 @@ import java.util.concurrent.ConcurrentHashMap;
 public class HomeData {
 
     @XmlElement
-    private ConcurrentHashMap<String, HomeVentSwitches> homeData;
+    private ConcurrentHashMap<String, VentSwitch> homeData;
 
     public HomeData() {
-        homeData = new ConcurrentHashMap<String, HomeVentSwitches>();
+        homeData = new ConcurrentHashMap<String, VentSwitch>();
     }
 
-    public void addHome(HomeVentSwitches home) {
-        homeData.put(home.getHomeid(), home);
+    public void addHome(VentSwitch ventSwitch) {
+        homeData.put(ventSwitch.getHouseid(), ventSwitch);
     }
 
-    public HomeVentSwitches getHome(String homeid) {
-        return homeData.get(homeid);
+    public VentSwitch getVentSwitch(String houseid) {
+        return homeData.get(houseid);
     }
 }

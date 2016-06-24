@@ -17,7 +17,7 @@ public class BathVentSwitchService {
                               @PathParam("bath_vent_id") Integer switchid,
                               @PathParam("action_type") String action) {
 
-        SwitchResponse switchResponse = new SwitchResponse("1234",4321, "on", true);
+        SwitchResponse switchResponse = new SwitchResponse("1234", "on", true);
         return switchResponse;
     }
 }
