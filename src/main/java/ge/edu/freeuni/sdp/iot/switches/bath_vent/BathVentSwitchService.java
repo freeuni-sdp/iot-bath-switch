@@ -12,8 +12,8 @@ import javax.ws.rs.core.MediaType;
 @Produces( { MediaType.APPLICATION_JSON})
 public class BathVentSwitchService {
 
-    @PUT
-    public SwitchResponse put(@PathParam("house_id") String houseid,
+    @GET
+    public SwitchResponse get(@PathParam("house_id") String houseid,
                               @PathParam("bath_vent_id") Integer switchid,
                               @PathParam("action_type") String action) {
 
