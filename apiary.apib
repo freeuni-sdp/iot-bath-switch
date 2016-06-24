@@ -14,9 +14,10 @@ Returns `200` if service is alive.
 
 + Response 200 (application/json)
 
-## bath-vent turn on/off [/houses/{house_id}/bath_vent/{bath_vent_id}/action/{action_type}]
+## bath-vent turn on/off [/houses/{house_id}/action/{action_type}]
 house is identified by houseid and bath_vent_switch is identified by 
-switchid. Turns on or turns off bath vent depending on action_type.
+as far as each house has only one bath vent switch.
+Turns on or turns off bath vent depending on action_type.
 
     Status code is: 
         200 when everything was fine and successed;
@@ -29,7 +30,6 @@ switchid. Turns on or turns off bath vent depending on action_type.
 
         {
             "houseid" : 14,
-            "switchid" : 12,
             "status" : "on",
             "successed" : true
         }
@@ -38,7 +38,6 @@ switchid. Turns on or turns off bath vent depending on action_type.
 
         {
             "houseid" : 14,
-            "switchid" : 12,
             "status" : "on",
             "successed" : false
         }
@@ -47,7 +46,42 @@ switchid. Turns on or turns off bath vent depending on action_type.
 
         {
             "houseid" : 14,
-            "switchid" : 12,
+            "status" : "on",
+            "successed" : false
+        }
+        
+
+## bath-vent check state [/houses/{house_id}]
+checks state of bath vent switch in the house identified by house_id
+
+    Status code is: 
+        200 when everything was fine and successed;
+        503 when device was not reached, and in status, last gotten value
+        is returned;
+        404 when house id specification is incorrect
+
+### get bath vent switch state [GET]
+
++ response 200 (application/json) 
+
+        {
+            "houseid" : 14, 
+            "status" : "on",
+            "successed" : true
+        }
+
++ response 503 (application/json) 
+
+        {
+            "houseid" : 14, 
+            "status" : "on",
+            "successed" : false
+        }
+
++ response 404 (application/json) 
+
+        {
+            "houseid" : 14, 
             "status" : "on",
             "successed" : false
         }
