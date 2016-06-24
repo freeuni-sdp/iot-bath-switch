@@ -14,16 +14,40 @@ Returns `200` if service is alive.
 
 + Response 200 (application/json)
 
-## bath-vent turn on/off [/houses/{house_id}/bath_vent/{bath_vent_id}]
+## bath-vent turn on/off [/houses/{house_id}/bath_vent/{bath_vent_id}/action/{action_type}]
 house is identified by houseid and bath_vent_switch is identified by 
-switchid. Turns on or turns off bath vent.
+switchid. Turns on or turns off bath vent depending on action_type.
+
+    Status code is: 
+        200 when everything was fine and successed;
+        503 when device was not reached;
+        404 when device id specification is incorrect
 
 ### turn on bath vent [PUT]
 
 + response 200 (application/json) 
 
-+ response 503 (application/json)
-        
         {
-            "reason" : "Hardware problem!"
+            "houseid" : 14,
+            "switchid" : 12,
+            "status" : "on",
+            "successed" : true
+        }
+
++ response 503 (application/json) 
+
+        {
+            "houseid" : 14,
+            "switchid" : 12,
+            "status" : "on",
+            "successed" : false
+        }
+
++ response 404 (application/json) 
+
+        {
+            "houseid" : 14,
+            "switchid" : 12,
+            "status" : "on",
+            "successed" : false
         }
