@@ -11,8 +11,7 @@ public class SwitchResponse {
 
     @XmlElement
     private String houseid;
-    @XmlElement
-    private Integer switchid;
+    
     @XmlElement
     private String status;
     @XmlElement
