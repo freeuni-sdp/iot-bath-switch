@@ -1,4 +1,4 @@
-package ge.edu.freeuni.sdp.iot.switches.bath_vent;
+package ge.edu.freeuni.sdp.iot.switches.bath_vent.model;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;

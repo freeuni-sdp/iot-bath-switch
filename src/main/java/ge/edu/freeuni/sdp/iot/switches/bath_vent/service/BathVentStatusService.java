@@ -1,4 +1,6 @@
-package ge.edu.freeuni.sdp.iot.switches.bath_vent;
+package ge.edu.freeuni.sdp.iot.switches.bath_vent.service;
+
+import ge.edu.freeuni.sdp.iot.switches.bath_vent.model.SwitchResponse;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;

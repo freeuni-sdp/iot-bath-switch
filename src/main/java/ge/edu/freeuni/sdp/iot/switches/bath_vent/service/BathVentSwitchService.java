@@ -1,4 +1,6 @@
-package ge.edu.freeuni.sdp.iot.switches.bath_vent;
+package ge.edu.freeuni.sdp.iot.switches.bath_vent.service;
+
+import ge.edu.freeuni.sdp.iot.switches.bath_vent.model.SwitchResponse;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
@@ -12,8 +14,8 @@ import javax.ws.rs.core.MediaType;
 @Produces( { MediaType.APPLICATION_JSON})
 public class BathVentSwitchService {
 
-    @GET
-    public SwitchResponse get(@PathParam("house_id") String houseid,
+    @PUT
+    public SwitchResponse put(@PathParam("house_id") String houseid,
                               @PathParam("action_type") String action) {
 
         SwitchResponse switchResponse = new SwitchResponse("1234", "on", true);
