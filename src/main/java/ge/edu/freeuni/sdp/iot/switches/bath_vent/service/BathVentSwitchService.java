@@ -25,30 +25,8 @@ public class BathVentSwitchService {
     public SwitchResponse put(@PathParam("house_id") String houseid,
                               @PathParam("action_type") String action) {
 
-        Client client = ClientBuilder.newClient();
-        String homeID = "c637a8eb-5c1e-46fc-9de8-607df60df27a";
-        String url = "https://2.2.2.4" +
-                "/webapi/houses/" + homeID;
-
-
-        SwitchResponse switchResponse = new SwitchResponse(homeID,action, true);
-
-
-        Response response =
-                client.target("")
-                        .request(MediaType.APPLICATION_JSON)
-                        .accept(MediaType.APPLICATION_JSON)
-                        .put(Entity.json(switchResponse.getStatus()));
-
-
-        SwitchResponse switchResponse1 = response.readEntity(SwitchResponse.class);
-
-        Home home = HomeData.getInstance().getHome(houseid);
-
-        if (switchResponse1.getSucceed()) {
-            home.getVentSwitch().setStatus(switchResponse.getStatus());
-        }
+         SwitchResponse response = new SwitchResponse(houseid, "on", true);
         
-        return switchResponse;
+        return response;
     }
 }

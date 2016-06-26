@@ -17,7 +17,7 @@ public class SwitchResponse {
     @XmlElement
     private boolean succeed;
 
-    public SwitchResponse(String houseid,String status, boolean succeed) {
+    public SwitchResponse(String houseid, String status, boolean succeed) {
         this.houseid = houseid;
         this.status = status;
         this.succeed = succeed;
