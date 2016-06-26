@@ -19,6 +19,12 @@ import javax.ws.rs.core.Response;
 @XmlRootElement
 public class HomeData {
 
+    private static HomeData instance = new HomeData();
+
+    public static HomeData getInstance(){
+        return instance;
+    }
+
     @XmlElement
     private ConcurrentHashMap<String, Home> homeData;
 
