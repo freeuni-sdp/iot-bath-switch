@@ -31,9 +31,7 @@ public class BathVentSwitchService {
                 "/webapi/houses/" + homeID;
 
 
-
         SwitchResponse switchResponse = new SwitchResponse(homeID,action, true);
-
 
 
         Response response =
