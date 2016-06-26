@@ -21,8 +21,8 @@ import javax.ws.rs.core.Response;
 @Produces( { MediaType.APPLICATION_JSON})
 public class BathVentSwitchService {
 
-    @PUT
-    public SwitchResponse put(@PathParam("house_id") String houseid,
+    @POST
+    public SwitchResponse post(@PathParam("house_id") String houseid,
                               @PathParam("action_type") String action) {
 
          SwitchResponse response = new SwitchResponse(houseid, "on", true);

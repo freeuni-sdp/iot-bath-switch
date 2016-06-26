@@ -26,5 +26,4 @@ public class BathVentStatusService {
         return response;
     }
 
-
 }
