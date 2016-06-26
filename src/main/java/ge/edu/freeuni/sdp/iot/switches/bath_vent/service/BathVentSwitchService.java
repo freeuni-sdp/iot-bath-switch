@@ -22,11 +22,11 @@ import javax.ws.rs.core.Response;
 public class BathVentSwitchService {
 
     @POST
-    public SwitchResponse post(@PathParam("house_id") String houseid,
+    public Response post(@PathParam("house_id") String houseid,
                               @PathParam("action_type") String action) {
 
          SwitchResponse response = new SwitchResponse(houseid, "on", true);
         
-        return response;
+        return Response.ok().build();
     }
 }
