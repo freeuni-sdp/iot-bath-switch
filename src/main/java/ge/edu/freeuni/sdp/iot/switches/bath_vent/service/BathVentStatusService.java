@@ -15,7 +15,6 @@ import javax.ws.rs.core.Response;
  */
 
 @Path("/houses/{house_id}")
-@Consumes( { MediaType.APPLICATION_JSON})
 @Produces( { MediaType.APPLICATION_JSON})
 public class BathVentStatusService {
     @GET

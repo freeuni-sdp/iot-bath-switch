@@ -17,16 +17,14 @@ import javax.ws.rs.core.Response;
  */
 
 @Path("/houses/{house_id}/action/{action_type}")
-@Consumes( { MediaType.APPLICATION_JSON})
 @Produces( { MediaType.APPLICATION_JSON})
 public class BathVentSwitchService {
 
     @POST
-    public Response post(@PathParam("house_id") String houseid,
-                              @PathParam("action_type") String action) {
+    public SwitchResponse post(@PathParam("house_id") String houseid) {
 
-         SwitchResponse response = new SwitchResponse(houseid, "on", true);
+        SwitchResponse response = new SwitchResponse(houseid, "on", true);
         
-        return Response.ok().build();
+        return response;
     }
 }
