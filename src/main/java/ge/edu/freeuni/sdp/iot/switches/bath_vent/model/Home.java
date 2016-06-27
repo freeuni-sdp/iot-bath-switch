@@ -6,12 +6,12 @@ package ge.edu.freeuni.sdp.iot.switches.bath_vent.model;
 public class Home {
 
     private String homeid;
-    private String ventip;
+    private String venturl;
     private VentSwitch ventSwitch;
 
-    public Home(String homeid, String ventip) {
+    public Home(String homeid, String venturl) {
         this.homeid = homeid;
-        this.ventip = ventip;
+        this.venturl = venturl;
         ventSwitch = new VentSwitch(homeid, "off");
     }
 
@@ -19,8 +19,8 @@ public class Home {
         return homeid;
     }
 
-    public String getVentip() {
-        return ventip;
+    public String getVentUrl() {
+        return venturl;
     }
 
     public VentSwitch getVentSwitch() {

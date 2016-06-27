@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf1811f5-6687-439c-91a5-5305f8de666a" name="Default" comment="">
-<<<<<<< HEAD
+
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ge/edu/freeuni/sdp/iot/switches/bath_vent/service/BathVentStatusService.java" afterPath="$PROJECT_DIR$/src/main/java/ge/edu/freeuni/sdp/iot/switches/bath_vent/service/BathVentStatusService.java" />
-=======
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -13,7 +12,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ge/edu/freeuni/sdp/iot/switches/bath_vent/data/HomeData.java" afterPath="$PROJECT_DIR$/src/main/java/ge/edu/freeuni/sdp/iot/switches/bath_vent/data/HomeData.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ge/edu/freeuni/sdp/iot/switches/bath_vent/service/BathVentStatusService.java" afterPath="$PROJECT_DIR$/src/main/java/ge/edu/freeuni/sdp/iot/switches/bath_vent/service/BathVentStatusService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ge/edu/freeuni/sdp/iot/switches/bath_vent/service/BathVentSwitchService.java" afterPath="$PROJECT_DIR$/src/main/java/ge/edu/freeuni/sdp/iot/switches/bath_vent/service/BathVentSwitchService.java" />
->>>>>>> 5747235ebafff3f7b2410db1537eab0005e131a9
+
     </list>
     <ignored path="bath_vent_switches.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,13 +62,13 @@
       <file leaf-file-name="Home.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ge/edu/freeuni/sdp/iot/switches/bath_vent/model/Home.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
+
             <state relative-caret-position="306">
               <caret line="20" column="79" selection-start-line="20" selection-start-column="79" selection-end-line="20" selection-end-column="79" />
-=======
+
             <state vertical-scroll-proportion="0.0">
               <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
->>>>>>> 5747235ebafff3f7b2410db1537eab0005e131a9
+
               <folding />
             </state>
           </provider>
@@ -78,17 +77,16 @@
       <file leaf-file-name="BathVentStatusService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ge/edu/freeuni/sdp/iot/switches/bath_vent/service/BathVentStatusService.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
+
             <state relative-caret-position="173">
               <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
               <folding />
-=======
+
             <state vertical-scroll-proportion="0.0">
               <caret line="38" column="67" selection-start-line="34" selection-start-column="8" selection-end-line="38" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
->>>>>>> 5747235ebafff3f7b2410db1537eab0005e131a9
             </state>
           </provider>
         </entry>
@@ -105,7 +103,6 @@
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
       <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
@@ -122,7 +119,6 @@
             <state relative-caret-position="252">
               <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
               <folding />
-=======
       <file leaf-file-name="SwitchResponse.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ge/edu/freeuni/sdp/iot/switches/bath_vent/model/SwitchResponse.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -131,24 +127,22 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
->>>>>>> 5747235ebafff3f7b2410db1537eab0005e131a9
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
       <file leaf-file-name="HomeData.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ge/edu/freeuni/sdp/iot/switches/bath_vent/data/HomeData.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="402">
               <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-=======
+
       <file leaf-file-name="VentSwitch.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ge/edu/freeuni/sdp/iot/switches/bath_vent/model/VentSwitch.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
->>>>>>> 5747235ebafff3f7b2410db1537eab0005e131a9
+
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -159,13 +153,12 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
             <state relative-caret-position="2412">
               <caret line="134" column="17" selection-start-line="134" selection-start-column="17" selection-end-line="134" selection-end-column="17" />
-=======
+
             <state vertical-scroll-proportion="0.0">
               <caret line="135" column="0" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
->>>>>>> 5747235ebafff3f7b2410db1537eab0005e131a9
+
               <folding />
             </state>
           </provider>
@@ -209,10 +202,9 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/ge/edu/freeuni/sdp/iot/switches/bath_vent/data/HomeData.java" />
         <option value="$PROJECT_DIR$/src/main/java/ge/edu/freeuni/sdp/iot/switches/bath_vent/service/BathVentStatusService.java" />
-<<<<<<< HEAD
-=======
+
         <option value="$PROJECT_DIR$/src/main/java/ge/edu/freeuni/sdp/iot/switches/bath_vent/service/BathVentSwitchService.java" />
->>>>>>> 5747235ebafff3f7b2410db1537eab0005e131a9
+
       </list>
     </option>
   </component>
@@ -270,11 +262,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-<<<<<<< HEAD
-=======
       <pane id="PackagesPane" />
       <pane id="Scope" />
->>>>>>> 5747235ebafff3f7b2410db1537eab0005e131a9
       <pane id="ProjectPane">
         <subPane>
           <PATH>

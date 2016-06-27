@@ -3,10 +3,13 @@ package ge.edu.freeuni.sdp.iot.switches.bath_vent.service;
 import ge.edu.freeuni.sdp.iot.switches.bath_vent.data.HomeData;
 import ge.edu.freeuni.sdp.iot.switches.bath_vent.model.Home;
 import ge.edu.freeuni.sdp.iot.switches.bath_vent.model.SwitchResponse;
+import ge.edu.freeuni.sdp.iot.switches.bath_vent.model.VentSwitch;
+import org.json.JSONObject;
 
 import javax.ws.rs.*;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
+import javax.ws.rs.client.Entity;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
@@ -18,11 +21,37 @@ import javax.ws.rs.core.Response;
 @Produces( { MediaType.APPLICATION_JSON})
 public class BathVentStatusService {
     @GET
-    public SwitchResponse get(@PathParam("house_id") String houseid) {
+    public Response get(@PathParam("house_id") String houseid) {
 
-        SwitchResponse response = new SwitchResponse(houseid, "off", false);
+        HomeData homeData = HomeData.getInstance();
 
-        return response;
+        Home home = homeData.getHome(houseid);
+
+        if(home == null) {
+            SwitchResponse response = new SwitchResponse(houseid, null, false);
+            return Response.status(Response.Status.NOT_FOUND).entity(response).build();
+        }
+
+        Client client = ClientBuilder.newClient();
+
+        String url = home.getVentUrl() + "webapi/status";
+
+        System.out.println(url);
+
+        Response simulatorResponse =
+                client.target(url)
+                        .request(MediaType.APPLICATION_JSON)
+                        .accept(MediaType.APPLICATION_JSON)
+                        .get();
+
+//        VentSwitch response = simulatorResponse.readEntity(VentSwitch.class);
+//
+//        if(simulatorResponse.getStatus() != Response.Status.OK.getStatusCode()) {
+//            SwitchResponse response = new SwitchResponse(houseid, switchResponse.getStatus(), false);
+//            return Response.status(Response.Status.SERVICE_UNAVAILABLE).entity(response).build();
+//        }
+
+        return simulatorResponse;
     }
 
 }

@@ -16,19 +16,25 @@ import javax.ws.rs.core.Response;
 /**
  * Created by khrak on 6/25/16.
  */
-@XmlRootElement
 public class HomeData {
+
+
+    private ConcurrentHashMap<String, Home> homeData;
 
     private static HomeData instance = new HomeData();
 
-    public static HomeData getInstance(){
+    public static HomeData getInstance()
+    {
+        if (instance == null) {
+            synchronized (HomeData.class) {
+                if (instance == null)
+                    instance = new HomeData();
+            }
+        }
         return instance;
     }
 
-    @XmlElement
-    private ConcurrentHashMap<String, Home> homeData;
-
-    public HomeData() {
+    private HomeData() {
         homeData = new ConcurrentHashMap<String, Home>();
         registerHomes();
     }
@@ -70,9 +76,10 @@ public class HomeData {
             JSONObject jsonObject = jsonArray.getJSONObject(i);
 
             String homeid = jsonObject.getJSONObject("RowKey").getString("_");
-            String ventip = jsonObject.getJSONObject("vent_ip").getString("_");
+            //String venturl = jsonObject.getJSONObject("vent_ip").getString("_");
+            String venturl = "https://iot-sim-bath.herokuapp.com/";
 
-            Home home = new Home(homeid, ventip);
+            Home home = new Home(homeid, venturl);
             addHome(home);
         }
     }
