@@ -28,15 +28,22 @@ public class BathVentSwitchService {
 
         Home home = homeData.getHome(houseid);
 
+        System.out.println(houseid + " and " + action);
+
+
         if(home == null) {
             SwitchResponse response = new SwitchResponse(houseid, null, false);
             return Response.status(Response.Status.NOT_FOUND).entity(response).build();
         }
 
+        System.out.println("found");
+
         Client client = ClientBuilder.newClient();
 
         String url = home.getVentUrl() + "webapi/bath/vent-switch/" + action;
 
+
+        System.out.println(url);
 
         Response simulatorResponse =
                 client.target(url)
@@ -45,10 +52,14 @@ public class BathVentSwitchService {
                         .get();
 
         if(simulatorResponse.getStatus() == Response.Status.NO_CONTENT.getStatusCode()) {
+            System.out.println("not available");
             SwitchResponse response = new SwitchResponse(houseid, null, false);
             return Response.status(Response.Status.SERVICE_UNAVAILABLE).entity(response).build();
         }
 
-        return simulatorResponse;
+        System.out.println("ok");
+        SwitchResponse response = new SwitchResponse(houseid, action, true);
+
+        return Response.status(Response.Status.OK).entity(response).build();
     }
 }

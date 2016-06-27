@@ -32,7 +32,7 @@ public class BathVentStatusService {
             return Response.status(Response.Status.NOT_FOUND).entity(response).build();
         }
 
-        
+
         Client client = ClientBuilder.newClient();
 
         String url = home.getVentUrl() + "webapi/bath/vent-switch";
