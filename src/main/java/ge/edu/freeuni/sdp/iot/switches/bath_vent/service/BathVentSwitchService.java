@@ -21,10 +21,30 @@ import javax.ws.rs.core.Response;
 public class BathVentSwitchService {
 
     @POST
-    public SwitchResponse post(@PathParam("house_id") String houseid) {
+    public Response post(@PathParam("house_id") String houseid,
+                               @PathParam("action_type") String action) {
 
-        SwitchResponse response = new SwitchResponse(houseid, "on", true);
-        
-        return response;
+        HomeData homeData = HomeData.getInstance();
+
+        Home home = homeData.getHome(houseid);
+
+        if(home == null) {
+            SwitchResponse response = new SwitchResponse(houseid, null, false);
+            return Response.status(Response.Status.NOT_FOUND).entity(response).build();
+        }
+
+        Client client = ClientBuilder.newClient();
+
+        String url = home.getVentUrl() + "webapi/status";
+
+        System.out.println(url);
+
+        Response simulatorResponse =
+                client.target(url)
+                        .request(MediaType.APPLICATION_JSON)
+                        .accept(MediaType.APPLICATION_JSON)
+                        .get();
+
+        return simulatorResponse;
     }
 }
