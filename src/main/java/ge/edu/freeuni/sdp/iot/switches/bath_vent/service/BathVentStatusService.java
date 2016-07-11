@@ -28,7 +28,6 @@ public class BathVentStatusService {
 
         Home home = homeData.getHome(houseid);
 
-
         /* if nothing was found, that return 404 error code */
         if(home == null) {
             SwitchResponse response = new SwitchResponse(houseid, null, false);
@@ -47,7 +46,7 @@ public class BathVentStatusService {
                         .request(MediaType.APPLICATION_JSON)
                         .accept(MediaType.APPLICATION_JSON)
                         .get();
-        
+
         if(simulatorResponse.getStatus() == Response.Status.SERVICE_UNAVAILABLE.getStatusCode()) {
             /* if connection was failed, return result, according to last update. */
             VentSwitch ventSwitch = home.getVentSwitch();

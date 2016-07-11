@@ -23,8 +23,15 @@ public class HomeData {
 
     private static HomeData instance = new HomeData();
 
+    private static HomeData testInstance;
+    private static boolean testMode = false;
+
     public static HomeData getInstance()
     {
+        if(testMode) {
+            return testInstance;
+        }
+
         if (instance == null) {
             synchronized (HomeData.class) {
                 if (instance == null)
@@ -32,6 +39,14 @@ public class HomeData {
             }
         }
         return instance;
+    }
+
+    public static void setTestInstance(HomeData instance) {
+        testInstance = instance;
+    }
+
+    public static void setTestMode(boolean value) {
+        testMode = value;
     }
 
     private HomeData() {

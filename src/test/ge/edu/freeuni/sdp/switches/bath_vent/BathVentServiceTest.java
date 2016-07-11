@@ -18,6 +18,7 @@ import javax.ws.rs.core.Application;
 import javax.ws.rs.core.Response;
 
 import static org.junit.Assert.*;
+import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 /**
@@ -25,7 +26,7 @@ import static org.mockito.Mockito.when;
  */
 public class BathVentServiceTest extends JerseyTest {
 
-    @Mock HomeData data;
+    @Mock private HomeData data;
     private String homeid;
     private String homeUrl = "https://iot-sim-bath.herokuapp.com/";
 
@@ -39,6 +40,8 @@ public class BathVentServiceTest extends JerseyTest {
         homeid = "3c5afb74-2e82-4f10-9931-89187fe47adf";
 
         MockitoAnnotations.initMocks(this);
+        HomeData.setTestInstance(data);
+        HomeData.setTestMode(true);
     }
 
     @After
@@ -47,17 +50,45 @@ public class BathVentServiceTest extends JerseyTest {
     }
 
     @Test
-    public void getOkStatusCode() throws Exception{
+    public void getOkStatusCode200() throws Exception{
 
-//        String status = "on";
-//
-//
-//        Home home = new Home(homeid, homeUrl);
-//
-//        when(data.getHome(homeid)).thenReturn(home);
-//
-//        Response response = target("/house/" + homeid).request().get();
-//        assertEquals(200, response.getStatus());
+        String status = "on";
+
+        Home home = new Home(homeid, homeUrl);
+
+        when(data.getHome(homeid)).thenReturn(home);
+
+        Response response = target("/houses/" + homeid).request().get();
+        assertEquals(Response.Status.OK.getStatusCode(), response.getStatus());
+    }
+
+    @Test
+    public void getNotFoundStatusCode404() throws Exception{
+
+        String status = "on";
+
+        String nonExistingid = "not_existing_id";
+        Home home = new Home(nonExistingid, homeUrl);
+
+        when(data.getHome(homeid)).thenReturn(null);
+
+        Response response = target("/houses/" + homeid).request().get();
+        assertEquals(Response.Status.NOT_FOUND.getStatusCode(), response.getStatus());
+    }
+
+    @Test
+    public void getCheckHomeDataForgetHomeCalling() throws Exception{
+
+        String status = "on";
+
+        Home home = new Home(homeid, homeUrl);
+
+        when(data.getHome(homeid)).thenReturn(home);
+
+        Response response = target("/houses/" + homeid).request().get();
+        assertEquals(response.getStatus(), Response.Status.OK.getStatusCode());
+
+        verify(data).getHome(homeid);
     }
 
 }

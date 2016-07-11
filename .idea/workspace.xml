@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="36d88c0c-d774-464c-89ac-93c8ab15cfdf" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ge/edu/freeuni/sdp/iot/switches/bath_vent/data/HomeData.java" afterPath="$PROJECT_DIR$/src/main/java/ge/edu/freeuni/sdp/iot/switches/bath_vent/data/HomeData.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ge/edu/freeuni/sdp/iot/switches/bath_vent/service/BathVentStatusService.java" afterPath="$PROJECT_DIR$/src/main/java/ge/edu/freeuni/sdp/iot/switches/bath_vent/service/BathVentStatusService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ge/edu/freeuni/sdp/iot/switches/bath_vent/service/BathVentSwitchService.java" afterPath="$PROJECT_DIR$/src/main/java/ge/edu/freeuni/sdp/iot/switches/bath_vent/service/BathVentSwitchService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/ge/edu/freeuni/sdp/switches/bath_vent/BathVentServiceTest.java" afterPath="$PROJECT_DIR$/src/test/ge/edu/freeuni/sdp/switches/bath_vent/BathVentServiceTest.java" />
     </list>
     <ignored path="bath_vent_switches.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,8 +30,8 @@
       <file leaf-file-name="BathVentServiceTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/ge/edu/freeuni/sdp/switches/bath_vent/BathVentServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="55" column="2" selection-start-line="55" selection-start-column="2" selection-end-line="55" selection-end-column="2" />
+            <state relative-caret-position="-172">
+              <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -39,8 +40,8 @@
       <file leaf-file-name="BathVentStatusService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ge/edu/freeuni/sdp/iot/switches/bath_vent/service/BathVentStatusService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
+            <state relative-caret-position="-270">
+              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -79,9 +80,14 @@
       <file leaf-file-name="HomeData.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ge/edu/freeuni/sdp/iot/switches/bath_vent/data/HomeData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
-              <folding />
+            <state relative-caret-position="270">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+              <folding>
+                <element signature="e#1115#1116#0" expanded="true" />
+                <element signature="e#1154#1155#0" expanded="true" />
+                <element signature="e#1207#1208#0" expanded="true" />
+                <element signature="e#1239#1240#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -114,10 +120,11 @@
       <list>
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/main/java/ge/edu/freeuni/sdp/iot/switches/bath_vent/model/VentSwitch.java" />
-        <option value="$PROJECT_DIR$/src/test/ge/edu/freeuni/sdp/switches/bath_vent/BathVentServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/ge/edu/freeuni/sdp/iot/switches/bath_vent/model/Home.java" />
         <option value="$PROJECT_DIR$/src/main/java/ge/edu/freeuni/sdp/iot/switches/bath_vent/service/BathVentSwitchService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ge/edu/freeuni/sdp/iot/switches/bath_vent/data/HomeData.java" />
         <option value="$PROJECT_DIR$/src/main/java/ge/edu/freeuni/sdp/iot/switches/bath_vent/service/BathVentStatusService.java" />
+        <option value="$PROJECT_DIR$/src/test/ge/edu/freeuni/sdp/switches/bath_vent/BathVentServiceTest.java" />
       </list>
     </option>
   </component>
@@ -351,7 +358,7 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Maven.Unnamed">
+  <component name="RunManager" selected="JUnit.BathVentServiceTest.getNotFoundStatusCode404">
     <configuration default="false" name="BathVentServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -369,6 +376,58 @@
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="BathVentServiceTest.getNotFoundStatusCode404" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ge.edu.freeuni.sdp.switches.bath_vent.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="bath_vent_switches" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="ge.edu.freeuni.sdp.switches.bath_vent" />
+      <option name="MAIN_CLASS_NAME" value="ge.edu.freeuni.sdp.switches.bath_vent.BathVentServiceTest" />
+      <option name="METHOD_NAME" value="getNotFoundStatusCode404" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="BathVentServiceTest.getCheckHomeDataForgetHomeCalling" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ge.edu.freeuni.sdp.switches.bath_vent.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="bath_vent_switches" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="ge.edu.freeuni.sdp.switches.bath_vent" />
+      <option name="MAIN_CLASS_NAME" value="ge.edu.freeuni.sdp.switches.bath_vent.BathVentServiceTest" />
+      <option name="METHOD_NAME" value="getCheckHomeDataForgetHomeCalling" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
@@ -706,13 +765,17 @@
       </MavenSettings>
       <method />
     </configuration>
-    <list size="2">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="JUnit.BathVentServiceTest" />
       <item index="1" class="java.lang.String" itemvalue="Maven.Unnamed" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.BathVentServiceTest.getNotFoundStatusCode404" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.BathVentServiceTest.getCheckHomeDataForgetHomeCalling" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.BathVentServiceTest" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.BathVentServiceTest.getNotFoundStatusCode404" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.BathVentServiceTest.getCheckHomeDataForgetHomeCalling" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.BathVentServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -735,14 +798,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BathVentServiceTest - 2016.07.11 at 16h 30m 33s.xml">
+    <history-entry file="BathVentServiceTest - 2016.07.12 at 01h 53m 34s.xml">
       <configuration name="BathVentServiceTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BathVentServiceTest - 2016.07.11 at 16h 33m 24s.xml">
+    <history-entry file="BathVentServiceTest - 2016.07.12 at 01h 55m 01s.xml">
       <configuration name="BathVentServiceTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BathVentServiceTest - 2016.07.11 at 23h 01m 43s.xml">
+    <history-entry file="BathVentServiceTest - 2016.07.12 at 01h 55m 21s.xml">
       <configuration name="BathVentServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BathVentServiceTest - 2016.07.12 at 01h 56m 29s.xml">
+      <configuration name="BathVentServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BathVentServiceTest - 2016.07.12 at 01h 56m 54s.xml">
+      <configuration name="BathVentServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BathVentServiceTest - 2016.07.12 at 01h 57m 19s.xml">
+      <configuration name="BathVentServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BathVentServiceTest_getCheckHomeDataForgetHomeCalling - 2016.07.12 at 02h 00m 57s.xml">
+      <configuration name="BathVentServiceTest.getCheckHomeDataForgetHomeCalling" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BathVentServiceTest_getCheckHomeDataForgetHomeCalling - 2016.07.12 at 02h 03m 21s.xml">
+      <configuration name="BathVentServiceTest.getCheckHomeDataForgetHomeCalling" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BathVentServiceTest_getNotFoundStatusCode404 - 2016.07.12 at 01h 58m 58s.xml">
+      <configuration name="BathVentServiceTest.getNotFoundStatusCode404" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BathVentServiceTest_getNotFoundStatusCode404 - 2016.07.12 at 02h 03m 51s.xml">
+      <configuration name="BathVentServiceTest.getNotFoundStatusCode404" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -751,6 +835,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -767,7 +852,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -823,7 +907,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
           <caret line="50" column="93" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="93" />
-          <folding />
+          <folding>
+            <element signature="e#1115#1116#0" expanded="true" />
+            <element signature="e#1154#1155#0" expanded="true" />
+            <element signature="e#1207#1208#0" expanded="true" />
+            <element signature="e#1239#1240#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -895,26 +984,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/ge/edu/freeuni/sdp/switches/bath_vent/BathVentServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="55" column="2" selection-start-line="55" selection-start-column="2" selection-end-line="55" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-common/2.22/jersey-common-2.22.jar!/org/glassfish/jersey/message/internal/EntityInputStream.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
           <caret line="123" column="0" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ge/edu/freeuni/sdp/iot/switches/bath_vent/data/HomeData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -954,10 +1027,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ge/edu/freeuni/sdp/iot/switches/bath_vent/data/HomeData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="e#1115#1116#0" expanded="true" />
+            <element signature="e#1154#1155#0" expanded="true" />
+            <element signature="e#1207#1208#0" expanded="true" />
+            <element signature="e#1239#1240#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/ge/edu/freeuni/sdp/switches/bath_vent/BathVentServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-172">
+          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ge/edu/freeuni/sdp/iot/switches/bath_vent/service/BathVentStatusService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
+        <state relative-caret-position="-270">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding />
         </state>
       </provider>
