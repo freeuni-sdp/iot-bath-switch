@@ -22,8 +22,8 @@ Returns `200` if service is alive.
 
     Status code is: 
         200 when everything was fine and successed;
-        503 when device was not reached, and in status, last gotten value
-        is returned;
+        503 when connection to simulator fails and response is based
+        on the last update this switch had. 
         404 when house id specification is incorrect
 
 + response 200 (application/json) 
@@ -37,7 +37,7 @@ Returns `200` if service is alive.
 + response 503 (application/json) 
 
         {
-            "houseid" : "a1bc00fb-4724-476a-a553-d65d2c1bac0e", 
+            "houseid" : "a1bc00fb-4724-476a-a553-d65d2c1bac0e",
             "status" : "on",
             "successed" : false
         }
@@ -59,7 +59,6 @@ Returns `200` if service is alive.
 
     Status code is: 
         200 when everything was fine and successed;
-        503 when device was not reached;
         404 when device id specification is incorrect
 
 + Request (application/json)
@@ -75,14 +74,6 @@ Returns `200` if service is alive.
             "houseid" : "a1bc00fb-4724-476a-a553-d65d2c1bac0e",
             "status" : "on",
             "successed" : true
-        }
-
-+ response 503 (application/json) 
-
-        {
-            "houseid" : "a1bc00fb-4724-476a-a553-d65d2c1bac0e",
-            "status" : "on",
-            "successed" : false
         }
 
 + response 404 (application/json) 
