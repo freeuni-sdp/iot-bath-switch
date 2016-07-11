@@ -13,7 +13,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class VentSwitch {
 
     @XmlElement
-    private String status;
+    private  volatile String status;
     @XmlElement
     private String houseid;
 

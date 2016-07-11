@@ -22,7 +22,7 @@ public class BathVentSwitchService {
 
     @POST
     public Response post(@PathParam("house_id") String houseid,
-                               @PathParam("action_type") String action) {
+                                String action) {
 
         HomeData homeData = HomeData.getInstance();
 
