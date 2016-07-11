@@ -57,7 +57,19 @@ public class BathVentStatusService {
             return Response.status(Response.Status.SERVICE_UNAVAILABLE).entity(response).build();
         }
 
-        return simulatorResponse;
+        String st = simulatorResponse.readEntity(String.class);
+
+
+        JSONObject jsonResponse = new JSONObject(st);
+
+        SwitchResponse switchResponse = new SwitchResponse(jsonResponse.getString("houseid"),
+                                                           jsonResponse.getString("status"),
+                                                           jsonResponse.getBoolean("succeed"));
+
+        /* keep current current response, got from simulator, in homeData. */
+        home.setVentSwitch(new VentSwitch(switchResponse.getHouseid(), switchResponse.getStatus()));
+
+        return Response.status(Response.Status.OK).entity(switchResponse).build();
     }
 
 }

@@ -27,4 +27,7 @@ public class Home {
         return ventSwitch;
     }
 
+    public void setVentSwitch(VentSwitch newVentSwitch) {
+        this.ventSwitch = newVentSwitch;
+    }
 }
