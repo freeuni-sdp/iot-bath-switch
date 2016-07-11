@@ -47,7 +47,7 @@ public class BathVentStatusService {
                         .request(MediaType.APPLICATION_JSON)
                         .accept(MediaType.APPLICATION_JSON)
                         .get();
-
+        
         if(simulatorResponse.getStatus() == Response.Status.SERVICE_UNAVAILABLE.getStatusCode()) {
             /* if connection was failed, return result, according to last update. */
             VentSwitch ventSwitch = home.getVentSwitch();
@@ -58,7 +58,6 @@ public class BathVentStatusService {
         }
 
         String st = simulatorResponse.readEntity(String.class);
-
 
         JSONObject jsonResponse = new JSONObject(st);
 
