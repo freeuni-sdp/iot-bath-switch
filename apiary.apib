@@ -22,6 +22,8 @@ Returns `200` if service is alive.
 
     Status code is: 
         200 when everything was fine and successed;
+        503 when connection to simulator fails and response is based
+        on the last update this switch had. 
         404 when house id specification is incorrect
 
 + response 200 (application/json) 
