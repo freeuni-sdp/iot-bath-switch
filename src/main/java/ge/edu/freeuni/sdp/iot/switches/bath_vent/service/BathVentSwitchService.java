@@ -31,7 +31,6 @@ public class BathVentSwitchService {
 
         Home home = homeData.getHome(houseid);
 
-        System.out.println(body + " body ");
 
         if(home == null) {
             SwitchResponse response = new SwitchResponse(houseid, null, false);
@@ -53,6 +52,7 @@ public class BathVentSwitchService {
                         .request(MediaType.APPLICATION_JSON)
                         .accept(MediaType.APPLICATION_JSON)
                         .post(Entity.entity(body, MediaType.APPLICATION_JSON));
+
 
         if(simulatorResponse.getStatus() == Response.Status.SERVICE_UNAVAILABLE.getStatusCode()) {
             /* if connection was failed, return result, according to last update. */
@@ -100,13 +100,18 @@ public class BathVentSwitchService {
 
             Client client = ClientBuilder.newClient();
 
-            String url = home.getVentUrl() + "webapi/bath/vent-switch/off";
+            String url = home.getVentUrl() + "webapi/bath/vent-switch";
+
+            String body = "{\n" +
+                    "    \"set_status\": \"off\",\n" +
+                    "    \"timeout\":" + timeout + "\n" +
+                    "}";
 
             Response simulatorResponse =
                     client.target(url)
                             .request(MediaType.APPLICATION_JSON)
                             .accept(MediaType.APPLICATION_JSON)
-                            .get();
+                            .post(Entity.entity(body, MediaType.APPLICATION_JSON));
 
             /* set status */
             home.getVentSwitch().setStatus("off");

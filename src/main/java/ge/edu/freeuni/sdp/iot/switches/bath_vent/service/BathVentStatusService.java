@@ -57,8 +57,7 @@ public class BathVentStatusService {
         }
 
         String st = simulatorResponse.readEntity(String.class);
-
-        System.out.println(st + " response");
+ 
         JSONObject jsonResponse = new JSONObject(st);
 
         SwitchResponse switchResponse = new SwitchResponse(jsonResponse.getString("houseid"),
