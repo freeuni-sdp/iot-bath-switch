@@ -4,6 +4,7 @@ package ge.edu.freeuni.sdp.switches.bath_vent;
 import ge.edu.freeuni.sdp.iot.switches.bath_vent.data.HomeData;
 import ge.edu.freeuni.sdp.iot.switches.bath_vent.model.Home;
 import ge.edu.freeuni.sdp.iot.switches.bath_vent.model.SwitchResponse;
+import ge.edu.freeuni.sdp.iot.switches.bath_vent.model.VentSwitch;
 import ge.edu.freeuni.sdp.iot.switches.bath_vent.service.BathVentStatusService;
 import org.glassfish.jersey.server.ResourceConfig;
 import org.glassfish.jersey.test.JerseyTest;
@@ -13,6 +14,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+import org.mockito.internal.matchers.Any;
 
 import javax.ws.rs.core.Application;
 import javax.ws.rs.core.Response;
@@ -27,6 +29,7 @@ import static org.mockito.Mockito.when;
 public class BathVentServiceTest extends JerseyTest {
 
     @Mock private HomeData data;
+
     private String homeid;
     private String homeUrl = "https://iot-sim-bath.herokuapp.com/";
 

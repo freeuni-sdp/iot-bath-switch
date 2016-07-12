@@ -34,7 +34,6 @@ public class BathVentStatusService {
             return Response.status(Response.Status.NOT_FOUND).entity(response).build();
         }
 
-
         Client client = ClientBuilder.newClient();
 
         String url = home.getVentUrl() + "webapi/bath/vent-switch";
@@ -57,7 +56,7 @@ public class BathVentStatusService {
         }
 
         String st = simulatorResponse.readEntity(String.class);
- 
+
         JSONObject jsonResponse = new JSONObject(st);
 
         SwitchResponse switchResponse = new SwitchResponse(jsonResponse.getString("houseid"),
@@ -69,5 +68,6 @@ public class BathVentStatusService {
 
         return Response.status(Response.Status.OK).entity(switchResponse).build();
     }
+
 
 }

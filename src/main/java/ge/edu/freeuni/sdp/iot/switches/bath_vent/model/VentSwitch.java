@@ -34,4 +34,17 @@ public class VentSwitch {
     public void setStatus(String newStatus) {
         status = newStatus;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        VentSwitch that = (VentSwitch) o;
+
+        if (status != null ? !status.equals(that.status) : that.status != null) return false;
+        return houseid != null ? houseid.equals(that.houseid) : that.houseid == null;
+
+    }
+
 }
