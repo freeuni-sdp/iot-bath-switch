@@ -46,13 +46,13 @@ public class BathVentSwitchService {
 
         Client client = ClientBuilder.newClient();
 
-        String url = home.getVentUrl() + "webapi/bath/vent-switch/" + state;
+        String url = home.getVentUrl() + "webapi/bath/vent-switch/";
 
         Response simulatorResponse =
                 client.target(url)
                         .request(MediaType.APPLICATION_JSON)
                         .accept(MediaType.APPLICATION_JSON)
-                        .get();
+                        .post(Entity.entity(body, MediaType.APPLICATION_JSON));
 
         if(simulatorResponse.getStatus() == Response.Status.SERVICE_UNAVAILABLE.getStatusCode()) {
             /* if connection was failed, return result, according to last update. */
@@ -62,7 +62,6 @@ public class BathVentSwitchService {
             SwitchResponse response = new SwitchResponse(houseid, status, false);
             return Response.status(Response.Status.SERVICE_UNAVAILABLE).entity(response).build();
         }
-
 
         /* check if state is on. If its on, then wait for timeout number of
         * seconds and then off switch. */
