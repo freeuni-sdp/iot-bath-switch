@@ -166,7 +166,6 @@ public class BathVentServiceTest extends JerseyTest {
 
         String st = request.readEntity(String.class);
 
-
         JSONObject json = new JSONObject(st);
 
         String status = json.getString("status");
