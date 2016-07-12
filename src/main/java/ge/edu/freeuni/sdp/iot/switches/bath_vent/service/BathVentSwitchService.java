@@ -4,7 +4,6 @@ import ge.edu.freeuni.sdp.iot.switches.bath_vent.data.HomeData;
 import ge.edu.freeuni.sdp.iot.switches.bath_vent.model.Home;
 import ge.edu.freeuni.sdp.iot.switches.bath_vent.model.SwitchResponse;
 import ge.edu.freeuni.sdp.iot.switches.bath_vent.model.VentSwitch;
-import org.apache.commons.beanutils.converters.IntegerArrayConverter;
 import org.json.JSONObject;
 
 import javax.ws.rs.*;

@@ -3,8 +3,6 @@ package ge.edu.freeuni.sdp.switches.bath_vent;
 
 import ge.edu.freeuni.sdp.iot.switches.bath_vent.data.HomeData;
 import ge.edu.freeuni.sdp.iot.switches.bath_vent.model.Home;
-import ge.edu.freeuni.sdp.iot.switches.bath_vent.model.SwitchResponse;
-import ge.edu.freeuni.sdp.iot.switches.bath_vent.model.VentSwitch;
 import ge.edu.freeuni.sdp.iot.switches.bath_vent.service.BathVentSwitchService;
 import org.glassfish.jersey.server.ResourceConfig;
 import org.glassfish.jersey.test.JerseyTest;
@@ -14,7 +12,6 @@ import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import org.mockito.internal.matchers.Any;
 
 import javax.ws.rs.client.Entity;
 import javax.ws.rs.core.Application;
