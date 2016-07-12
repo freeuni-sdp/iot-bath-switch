@@ -117,11 +117,7 @@
         <artifactId>jersey-test-framework-provider-inmemory</artifactId>
     </dependency>
 
-    <dependency>
-        <groupId>com.fasterxml.jackson.core</groupId>
-        <artifactId>jackson-core</artifactId>
-        <version>${jackson.version}</version>
-    </dependency>
+
     <dependency>
         <groupId>org.apache.struts</groupId>
         <artifactId>struts-tiles</artifactId>
