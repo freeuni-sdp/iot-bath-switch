@@ -49,7 +49,7 @@ public class BathVentServiceTest extends JerseyTest {
 
     @After
     public void tearDownChild() throws Exception {
-
+        HomeData.setTestMode(false);
     }
 
     @Test

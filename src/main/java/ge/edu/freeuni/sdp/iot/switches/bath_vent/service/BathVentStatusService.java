@@ -26,6 +26,7 @@ public class BathVentStatusService {
         /* Take home data, where we'll find home identified by houseid */
         HomeData homeData = HomeData.getInstance();
 
+
         Home home = homeData.getHome(houseid);
 
         /* if nothing was found, that return 404 error code */
