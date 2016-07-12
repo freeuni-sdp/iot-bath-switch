@@ -77,7 +77,7 @@ public class BathVentSwitchService {
 
     @POST
     public Response post(@PathParam("house_id") String houseid,
-                                String body) {
+                         String body) {
 
         System.out.println("house id is " + houseid);
         HomeData homeData = HomeData.getInstance();
