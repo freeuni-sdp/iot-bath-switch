@@ -58,11 +58,12 @@ public class BathVentStatusService {
 
         String st = simulatorResponse.readEntity(String.class);
 
+        System.out.println(st + " response");
         JSONObject jsonResponse = new JSONObject(st);
 
         SwitchResponse switchResponse = new SwitchResponse(jsonResponse.getString("houseid"),
                                                            jsonResponse.getString("status"),
-                                                           jsonResponse.getBoolean("succeed"));
+                                                           true);
 
         /* keep current current response, got from simulator, in homeData. */
         home.setVentSwitch(new VentSwitch(switchResponse.getHouseid(), switchResponse.getStatus()));
